@@ -1,0 +1,36 @@
+.destination {
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(10px, 1fr));
+    grid-auto-rows: 60px;
+    grid-template-areas:
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        "d-title d-title d-title d-title . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        "d-image d-image d-image d-image d-image d-image . . . . . ."
+        ". . . . . . . . . . . .";
+       ;
+}
+
+.destination-title {
+    grid-area: d-title;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+    align-self: flex-end;
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+    text-align: left;
+}
+
+.destination-image {
+    grid-area: d-image;
+    align-self: flex-start;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
