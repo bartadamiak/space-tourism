@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
     <title>Space tourism</title>
 </head>
@@ -12,7 +13,7 @@
 <body class="body-destination">
     <img src="images/logo.svg" id="logo" alt="">
     <header class="header">
-        
+
         <nav class="navigation-container">
             <ul class="navigation">
                 <li id="home"><span class="bold">00</span> home</li>
@@ -25,15 +26,15 @@
     </header>
 
 
-    <div class="wrapper hide">
+    <div class="wrapper current">
 
         <p class="title-top">
             so, you want to travel to
         </p>
         <h1 class="title">space</h1>
         <p class="title-about">
-            Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover
-            kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world
+            Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover
+            kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world
             experience!
 
         </p>
@@ -43,12 +44,46 @@
         </div>
     </div>
 
-    <div class="destination">
+    <div class="destination hide">
         <h2 class="destination-title">
             <span>01</span> pick your destination
         </h2>
         <div class="destination-image">
-            <img src="destination/image-moon.png" alt="" >
+            <img src="destination/image-moon.png" alt="">
+        </div>
+        <div class="destination-choose">
+            <ul class="destination-choose-container">
+                <li id="moon" class="selected-destination">moon</li>
+                <li id="mars">mars</li>
+                <li id="europa">europa</li>
+                <li id="titan">titan</li>
+            </ul>
+        </div>
+        <h3 class="destination-selected">
+            moon
+        </h3>
+        <p class="destination-about">
+            See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and
+            come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing
+            sites.
+        </p>
+        <div class="destination-info">
+            <div class="destnation-info-box">
+                <p class="destination-info-title">
+                    avg. distance
+                </p>
+                <p class="destination-info-info distance-info">
+                    384,400 KM
+                </p>
+            </div>
+            <div class="destnation-info-box">
+                <p class="destination-info-title">
+                    Est. travel time
+                </p>
+                <p class="destination-info-info time-info">
+                    9 months
+                </p>
+            </div>
         </div>
     </div>
 
@@ -56,6 +91,7 @@
 
 
     <script src="script.js"></script>
+    <script src="destination.js"></script>
 </body>
 
 </html>

@@ -11,9 +11,15 @@
         "d-title d-title d-title d-title . . . . . . . ."
         ". . . . . . . . . . . ."
         ". . . . . . . . . . . ."
+        "d-image d-image d-image d-image d-image d-image . d-choose d-choose d-choose . ."
+        "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+        "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+        "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+        "d-image d-image d-image d-image d-image d-image . d-about d-about d-about d-about ."
+        "d-image d-image d-image d-image d-image d-image . d-about d-about d-about d-about ."
         "d-image d-image d-image d-image d-image d-image . . . . . ."
+        "d-image d-image d-image d-image d-image d-image . d-info d-info d-info d-info ."
         ". . . . . . . . . . . .";
-       ;
 }
 
 .destination-title {
@@ -33,4 +39,84 @@
     justify-content: center;
     justify-items: center;
     text-align: center;
+}
+
+.destination-choose {
+    grid-area: d-choose;
+    align-items: center;
+    align-self: center;
+}
+
+.destination-selected {
+    grid-area: d-selected;
+    font-family: "Bellefair", serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #ffffff;
+    align-self: center;
+}
+
+.selected-destination {
+    color: #ffffff;
+    position: relative;
+}
+
+.selected-destination::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    height: 2px;
+    left: 0;
+    bottom: -15px;
+}
+
+.destination-about {
+    grid-area: d-about;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #d0d6f9;
+}
+
+.destination-info {
+    grid-area: d-info;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.destination-choose-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: #d0d6f9;
+    text-transform: uppercase;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.destination-info-title {
+    color: #D0D6F9;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2.36px;
+    margin-bottom: 16px;
+}
+
+.destination-info-info {
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.destnation-info-box:nth-child(1) {
+    margin-right: 70px;
 }
