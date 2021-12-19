@@ -6,9 +6,9 @@
     grid-template-columns: repeat(12, minmax(10px, 1fr));
     grid-auto-rows: 60px;
     grid-template-areas:
+        
         ". . . . . . . . . . . ."
-        ". . . . . . . . . . . ."
-        "d-title d-title d-title d-title . . . . . . . ."
+        "d-title d-title d-title d-title d-title d-title d-title d-title . . . ."
         ". . . . . . . . . . . ."
         ". . . . . . . . . . . ."
         "d-image d-image d-image d-image d-image d-image . d-choose d-choose d-choose . ."
@@ -20,6 +20,53 @@
         "d-image d-image d-image d-image d-image d-image . . . . . ."
         "d-image d-image d-image d-image d-image d-image . d-info d-info d-info d-info ."
         ". . . . . . . . . . . .";
+}
+
+@media (max-width: 1135px) {
+    .destination {
+        grid-template-areas:    
+            ". . . . . . . . . . . ."
+            "d-title d-title d-title d-title d-title d-title d-title d-title . . . ."
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            "d-image d-image d-image d-image d-image d-image . d-choose d-choose d-choose d-choose ."
+            "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+            "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+            "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+            "d-image d-image d-image d-image d-image d-image . d-about d-about d-about d-about d-about"
+            "d-image d-image d-image d-image d-image d-image . d-about d-about d-about d-about d-about"
+            "d-image d-image d-image d-image d-image d-image . d-about d-about d-about d-about d-about"
+            "d-image d-image d-image d-image d-image d-image . . . . . ."
+            "d-image d-image d-image d-image d-image d-image . d-info d-info d-info d-info ."
+            ". . . . . . . d-info d-info d-info d-info ."
+            ". . . . . . . . . . . .";
+    }
+}
+
+@media (max-width: 927px) {
+    .destination {
+        grid-template-areas:    
+            ". . . . . . . . . . . ."
+            "d-title d-title d-title d-title d-title d-title d-title d-title . . . ."
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            "d-image d-image d-image d-image d-image d-image . d-choose d-choose d-choose d-choose ."
+            "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+            "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+            "d-image d-image d-image d-image d-image d-image . d-selected d-selected d-selected d-selected ."
+            "d-image d-image d-image d-image d-image d-image . d-about d-about d-about d-about d-about"
+            "d-image d-image d-image d-image d-image d-image . d-about d-about d-about d-about d-about"
+            "d-image d-image d-image d-image d-image d-image . . . . . ."
+            "d-image d-image d-image d-image d-image d-image . d-info d-info d-info d-info ."
+            ". . . . . . . d-info d-info d-info d-info ."
+            ". . . . . . . . . . . .";
+    }
+
+    .destination-selected {
+       
+        font-size: 80px;
+       
+    }
 }
 
 .destination-title {
@@ -39,6 +86,12 @@
     justify-content: center;
     justify-items: center;
     text-align: center;
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 445px;
+    }
 }
 
 .destination-choose {
@@ -97,6 +150,7 @@
 
     li {
         list-style-type: none;
+        cursor: pointer;
     }
 }
 
@@ -119,4 +173,63 @@
 
 .destnation-info-box:nth-child(1) {
     margin-right: 70px;
+}
+
+@media (max-width: 897px) {
+    .destination-about {
+        font-size: 16px;
+  
+    }
+}
+
+@media (max-width: 768px) {
+    .destination {
+        grid-template-areas:    
+            ". . . . . . . . . . . ."
+            "d-title d-title d-title d-title d-title d-title d-title d-title d-title d-title d-title d-title"
+            ". . . . . . . . . . . ."
+            ". . . d-image d-image d-image d-image d-image d-image . . ."
+            ". . . d-image d-image d-image d-image d-image d-image . . ."
+            ". . . d-image d-image d-image d-image d-image d-image . . ."
+            ". . . d-image d-image d-image d-image d-image d-image . . ."
+            ". . . d-image d-image d-image d-image d-image d-image . . ."
+            // ". . . d-image d-image d-image d-image d-image d-image . . ."
+            ". . . d-choose d-choose d-choose d-choose d-choose d-choose . . ."
+            ". . . . . . . . . . . ."
+            "d-selected d-selected d-selected d-selected d-selected d-selected d-selected d-selected d-selected d-selected d-selected d-selected"
+            ". . . . . . . . . . . ."
+            "d-about d-about d-about d-about d-about d-about d-about d-about d-about d-about d-about d-about"
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            "d-info d-info d-info d-info d-info d-info d-info d-info d-info d-info d-info d-info"
+            ". . . . . . . . . . . .";
+    }
+
+    .destination-title {
+        font-size: 20px;
+    
+    }
+
+    .destination-selected {
+        text-align: center;
+        font-size: 80px;
+    }
+
+    .destination-info {
+       
+        justify-content: center;
+    }
+
+    .destination-about {
+        text-align: center;
+    }
+
+    .destination-info-title {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .destination-info-info {
+        font-size: 28px;
+    }
 }
